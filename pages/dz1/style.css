@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #a2a2a2;
+  text-align: center;
+}
+
+.section {
+  background: white;
+  margin: 30px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+/* 1 приклад */
+.hover-btn{
+  background: #779e44;
+  color: white;
+  transition: 0.3s;
+}
+
+.hover-btn:hover{
+  background: #2ecc71;
+  transform: scale(1.1);
+}
+/* 2 приклад */
+.move-btn{
+  background: #5c44c7;
+  color: white;
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move{
+  from{
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+/* 3 Приклад */
+.pulse-btn{
+  background: ##000000
+  color:black;
+  animation: pulse 3s infinite;
+ box-shadow: 0 0 40px #f00,0 0 40px #f00,0 0 40px #f00;
+}
+
+@keyframes pulse { 
+  0%{
+  transform: scale(1);  
+  }
+  50%{
+    transform:scale(1.15);
+   }
+  100%{
+    transform:scale(1);
+  }
+}
+
+/* 4 Приклад */
+.card{
+width: 175px;
+margin: auto;
+padding: 20px;
+background: #ecf0f1;
+border-radius: 10px;
+transition: 0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);  
+  }
+
+/* 5 Приклад */
+.photo{
+width: 300px;
+border-radius: 10px;
+transition: 0.3s;
+filter: brightless(40%)
+}
+
+.photo:hover{
+  filter: brightless(100%);
+  transform: scale(1.05);
+}
+
+/* Приклад 6 */
+.slider-box {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+  
+.slider-box img{
+width: 400px;
+height: 200px;
+ object-fit: cover;
+ border-radius: 10px;
+ transition:0.3s;
+}
+
+.slider-btn{
+font-size:24px;
+ padding: 10px 15px;
+  border:none;
+ background: #aaa;
+ color:white;
+ border-radius: 50%;
+ cursor:pointer;
+ transition:0.3s;
+}
+
+.slider-btn:hover{
+ bachground: #2ecc71;
+ transform: scale(1.1)
+}

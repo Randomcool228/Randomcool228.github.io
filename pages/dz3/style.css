@@ -1,0 +1,34 @@
+.block {
+ display: flex; 
+   gap: 20px;
+  background:#92a2a8;
+}
+
+.block img{
+ width: 300px
+}
+
+@media (max-width: 768px) {
+  .block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  } 
+
+  @media (max-width: 768px) {
+  .block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}

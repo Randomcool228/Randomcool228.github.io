@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+}
+
+/* 🎯 ОБ'ЄКТ ДЛЯ АНІМАЦІЇ */
+.box {
+  width: 200px;
+  height: 200px;
+  background: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 16px;
+}/* 🎯 ОБ'ЄКТ */
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    filter 0.4s ease;
+}
+
+/* ✨ HOVER-МАГІЯ */
+.box:hover {
+  transform: scale(1.08) translateY(-10px);
+  box-shadow: 
+    0 20px 40px rgba(0, 114, 255, 0.4),
+    0 0 25px rgba(0, 198, 255, 0.8);
+  filter: brightness(1.15);
+}
+/* 🖼 СЛАЙДЕР */
+.slider {
+  margin-top: 60px;
+  width: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+  font-size: 22px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* активний слайд */
+.slide.active {
+  display: flex;
+}
+
+/* кнопки */
+.nav {
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 26px;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev { left: -20px; }
+.next { right: -20px; }/* === СЛАЙДЕР === */
+.slider {
+  margin-top: 60px;
+  width: 320px;
+  position: relative;
+}
+
+.slides {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.slide {
+  height: 100%;
+  display: none;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev { left: -20px; }
+.next { right: -20px; }
